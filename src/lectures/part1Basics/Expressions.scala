@@ -60,5 +60,22 @@ object Expressions extends App {
    be identified as a string, because that is the type of the value of the last expression.
    NOTE: codeblocks have local scope, only visible to code inside the block... like JS functions
    */
+
+  // EXERCISES WOO!
+  // 1. The difference between "Hello world" vs println("Hello World?")
+  // 1A > The difference is that Hello World is a string value, while println
+  // is an expression which is a side effect
+
+  // 2. What is the value of:
+  val someValue = {
+    2 < 3 // relational operator that is true - a boolean.
+  }
+
+
+  val someOtherValue = {
+    if(someValue) 239 else 986 //
+    42 // haha a trick question! the value is 42 because its the last line...
+    // it's an integer, will return that value!
+  }
 }
 
